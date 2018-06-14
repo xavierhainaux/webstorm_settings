@@ -1,9 +1,0 @@
-<templateSet group="Dart">
-  <template name="bv" value="abstract class $NAME$ implements Built&lt;$NAME$, $NAME$Builder&gt; {&#10;  static Serializer&lt;$NAME$&gt; get serializer =&gt; _$$$NAME$Serializer;&#10;&#10;  String get id;&#10;&#10;  factory $NAME$([updates($NAME$Builder b)]) = _$$$NAME$;&#10;  $NAME$._();&#10;}" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="DART" value="true" />
-      <option name="DART_STATEMENT" value="false" />
-    </context>
-  </template>
-</templateSet>

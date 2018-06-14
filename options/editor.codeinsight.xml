@@ -3,4 +3,7 @@
     <option name="COLLAPSE_IMPORTS" value="false" />
     <option name="COLLAPSE_FILE_HEADER" value="false" />
   </component>
+  <component name="DartCodeFoldingSettings">
+    <option name="collapseParts" value="false" />
+  </component>
 </application>

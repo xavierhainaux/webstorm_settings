@@ -1,0 +1,41 @@
+<templateSet group="user">
+  <template name="mainstagexlcanvas" value="import 'package:core/stagexl.dart';&#10;&#10;main() =&gt; runView(_main);&#10;&#10;_main(Canvas canvas) async {&#10;  FixedContainer container = new FixedContainer(1280, 720);&#10;  $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+	  <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="mainstagexlcontainer" value="import 'package:core/stagexl.dart';&#10;&#10;main() =&gt; runView(_main);&#10;&#10;_main(FixedContainer container) async {&#10;  $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+	  <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="maineditor" value="import 'package:ui_editor/ui_editor_stagexl.dart';&#10;&#10;void main() {&#10;  edit('lib/slot/desktop/skin.g.dart', [$END$],&#10;      otherComponents: []);&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+	  <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="gettersetter" value="$TYPE$ get $NAME$ =&gt; _$NAME$;&#10;$TYPE$ _$NAME$;&#10;set $NAME$($TYPE$ $NAME$) {&#10;  if (_$NAME$ != $NAME$) {&#10;    _$NAME$ = $NAME$;&#10;    $END$&#10;  }&#10;}" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="maintest" value="import 'package:test/test.dart';&#10;&#10;main() {&#10;  test('$END$', () {&#10;    &#10;  });&#10; }" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+	  <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="builtvalue" value="abstract class $name$&#10;    implements Built&lt;$name$, $name$Builder&gt; {&#10;  static Serializer&lt;$name$&gt; get serializer =&gt;&#10;      _$$$lowerCaseName$Serializer;&#10;&#10;  factory $name$([updates($name$Builder b)]) =&#10;      _$$$name$;&#10;  $name$._();&#10;}" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="lowerCaseName" expression="camelCase(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+</templateSet>
