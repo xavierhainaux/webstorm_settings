@@ -1,4 +1,10 @@
 <templateSet group="user">
+  <template name="g1mainstagexlcanvas" value="import 'package:core/stagexl.dart';&#10;&#10;main() =&gt; runView(_main);&#10;&#10;_main(Canvas canvas) async {&#10;  FixedContainer container = new FixedContainer(1280, 720);&#10;  $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+	  <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
   <template name="mainstagexlcanvas" value="import 'package:core/stagexl.dart';&#10;&#10;main() =&gt; runView(_main);&#10;&#10;_main(Canvas canvas) async {&#10;  FixedContainer container = new FixedContainer(1280, 720);&#10;  $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="DART" value="true" />
